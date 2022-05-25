@@ -1,0 +1,91 @@
+/* Small Screen */
+.container {
+  margin: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form__left {
+  margin-bottom: 1rem;
+}
+
+.form__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.form__right {
+  margin-bottom: 1rem;
+}
+
+.form__title {
+  color: #4361ee;
+  font-size: 70px;
+  margin-bottom: 1rem;
+}
+.form__label {
+  font-size: 35px;
+}
+
+.form__input {
+  border: 1;
+  border-style: ridge;
+  border-color: #4361ee;
+  border-radius: 15px;
+  width: 80%;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.form__button {
+  border: none;
+  border-radius: 15px;
+  border-color: #4361ee;
+  background-color: #4361ee;
+  color: #fff;
+  width: 80%;
+  height: 40px;
+  margin-top: 1rem;
+  margin-bottom: 70px;
+  font-size: 25px;
+}
+
+/* medium screen */
+@media (min-width: 768px) {
+  /*
+   * Nothing TODO Here.
+   * We dont change style AddMovieForm. 
+   */
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .form {
+    margin: 0 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .form__left {
+    flex-basis: 60%;
+  }
+
+  .form__right {
+    flex-basis: 40%;
+    text-align: justify;
+  }
+}
